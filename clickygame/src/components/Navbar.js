@@ -2,7 +2,7 @@ import React from "react";
 
 function Navbar(props) {
   return (
-    <nav className="navbar bg-dark text-white border border-warning">
+    <nav className="navbar bg-dark text-white border">
       <div className="col-lg-4">
         <strong><h2>ClickEmDead</h2></strong>
       </div>

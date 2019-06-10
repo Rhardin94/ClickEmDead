@@ -22,14 +22,17 @@
 .App-link {
   color: #61dafb;
 }
+body {
+  background-image: url("https://wallpapermemory.com/uploads/704/the-office-us-background-1080p-45991.jpg");
+}
 
 img {
-  height: 175px;
-  width: 115px;
-};
-
-div.card:hover {
-  opacity: 0.5
+  height: 200px;
+  width: 150px;
+}
+.hover:hover {
+  opacity: 0.5;
+  transition: 0.5s opacity;
 }
 
 @keyframes App-logo-spin {
@@ -39,4 +42,4 @@ div.card:hover {
   to {
     transform: rotate(360deg);
   }
-};
+}

@@ -1,10 +1,9 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
 import characters from "./Chars.json";
 import GameCard from "./components/GameCard";
-import Jumbotron from "./components/Jumbotron";
 import Navbar from "./components/Navbar";
+import Footer from "./components/Footer";
 
 class App extends React.Component {
   state ={
@@ -12,7 +11,7 @@ class App extends React.Component {
     score: 0,
     topScore: 0,
     currentFriends: [],
-    instructions: "Click an image to begin!"
+    instructions: "Click an image to begin, but only once!"
   };
 
   componentDidMount() {
@@ -26,9 +25,10 @@ class App extends React.Component {
 
   makeFriend = id => {
     this.shuffleChars();
-    if (this.state.currentFriends !== id) {
+    if (id === 10) {
+      this.setState({currentFriends: [], score: 0, instructions: "You picked Toby...never pick Toby!"});
+    } else if (this.state.currentFriends !== id) {
       this.setState({currentFriends: id, score: this.state.score + 1, instructions: "You guessed correctly!"});
-      
       if (this.state.topScore === this.state.score) {
         this.setState({topScore: this.state.topScore + 1})
       }
@@ -39,20 +39,22 @@ class App extends React.Component {
 
   render() {
     return (
-      <div className="container">
+      <div>
         <Navbar score={this.state.score} topScore={this.state.topScore} instructions={this.state.instructions}/>
-        <Jumbotron/>
-        <div className="row border border-warning">
-          {this.state.characters.map(character => 
-            <GameCard
-              id={character.id}
-              key={character.id}
-              name={character.name}
-              image={character.image}
-              makeFriend={this.makeFriend}
-            />
-          )}
+        <div className="container">
+          <div className="row border bg-dark m-1">
+            {this.state.characters.map(character => 
+              <GameCard
+                id={character.id}
+                key={character.id}
+                name={character.name}
+                image={character.image}
+                makeFriend={this.makeFriend}
+              />
+            )}
+          </div>
         </div>
+        <Footer/>
       </div>
     )
   }
