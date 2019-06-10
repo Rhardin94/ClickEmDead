@@ -10,7 +10,7 @@ When first viewing the site, the user is directed to the main page.
 
 To play the game, the user is directed to click on a character card.
 
-![character card]("/assets/images/card.jpg)
+![character card](/assets/images/card.jpg)
 
 If the user picks correctly, the instructions and scores indicate it.
 
