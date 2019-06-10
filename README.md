@@ -1,6 +1,7 @@
 # ClickEmDead!
 ## Overview
-    ...ClickEmDead is a single-page, React-powered memory game that allows the user to interact with their favorite Office U.S. characters in an interactive game setting. The user is presented with 12 character cards and may click on each card to shoot for the high score!
+ClickEmDead is a single-page, React-powered memory game that allows the user to interact with their favorite Office U.S. characters in an interactive game setting. 
+The user is presented with 12 character cards and may click on each card to shoot for the high score!
 ## How to use
 
 When first viewing the site, the user is directed to the main page.
