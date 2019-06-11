@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/ClickEmDead/precache-manifest.ce45683dafe02e2ebb0b9169cc293dd2.js"
+  "/ClickEmDead/precache-manifest.12a8b679bb55c162859100259758c8e3.js"
 );
 
 self.addEventListener('message', (event) => {

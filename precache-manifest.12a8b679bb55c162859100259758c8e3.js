@@ -1,10 +1,10 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "8b238dfb07161ad9e04ef563c06a451b",
+    "revision": "c6adc57af5ead5aafb64693c7615e1e6",
     "url": "/ClickEmDead/index.html"
   },
   {
-    "revision": "054e5193bfd552b372e6",
+    "revision": "b59d674aca03d5c5fd88",
     "url": "/ClickEmDead/static/css/main.7bff9496.chunk.css"
   },
   {
@@ -12,8 +12,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/ClickEmDead/static/js/2.6efc73d3.chunk.js"
   },
   {
-    "revision": "054e5193bfd552b372e6",
-    "url": "/ClickEmDead/static/js/main.fec4d978.chunk.js"
+    "revision": "b59d674aca03d5c5fd88",
+    "url": "/ClickEmDead/static/js/main.66aba872.chunk.js"
   },
   {
     "revision": "be54faf027c975b5bb48",
