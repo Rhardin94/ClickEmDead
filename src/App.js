@@ -24,11 +24,13 @@ class App extends React.Component {
   }
 
   makeFriend = id => {
+    let currentFriends = this.state.currentFriends;
     this.shuffleChars();
     if (id === 10) {
       this.setState({currentFriends: [], score: 0, instructions: "You picked Toby...never pick Toby!"});
-    } else if (this.state.currentFriends !== id) {
-      this.setState({currentFriends: id, score: this.state.score + 1, instructions: "You guessed correctly!"});
+    } else if (!this.state.currentFriends.includes(id)) {
+      this.setState({score: this.state.score + 1, instructions: "You guessed correctly!"});
+      currentFriends.push(id);
       if (this.state.topScore === this.state.score) {
         this.setState({topScore: this.state.topScore + 1})
       }
